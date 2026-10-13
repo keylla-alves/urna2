@@ -1,0 +1,243 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dedede;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.urna {
+    width: 100%;
+    max-width: 650px;
+    background: #f8f8f5;
+    border: 4px solid #aaa;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px #0003;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.visor {
+    background: #e9eee9;
+    border: 2px solid #999;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.visor h2 {
+    font-size: 21px;
+}
+
+.visor p {
+    font-size: 15px;
+}
+
+#cpf {
+    width: 100%;
+    padding: 15px 5px;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    background: white;
+}
+
+.teclado {
+    display: flex;
+    gap: 15px;
+    background: #292929;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.numeros {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    min-height: 55px;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.numeros button {
+    background: #444;
+    color: white;
+}
+
+.numeros button:hover {
+    background: #666;
+}
+
+.numeros .zero {
+    grid-column: 2;
+}
+
+.acoes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.acoes button {
+    font-size: 13px;
+    padding: 8px 4px;
+}
+
+.corrige {
+    background: white;
+}
+
+.limpa {
+    background: #ff9d28;
+}
+
+.confirma {
+    background: #37b765;
+}
+
+@media (max-width: 450px) {
+    .urna {
+        padding: 12px;
+    }
+
+    .teclado {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .numeros {
+        gap: 6px;
+    }
+
+    button {
+        min-height: 45px;
+    }
+
+    .acoes button {
+        font-size: 10px;
+    }
+
+    #cpf {
+        font-size: 19px;
+    }
+}
+
+
+
+.urna {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.visor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    margin: 0;
+}
+
+.titulo input {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.botoes {
+display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.315);
+    border-radius: 8px;
+}
+
+
+.controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.confirmar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.confirmar button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.br {
+    background-color: white;
+    color: black;
+}
+
+.verm {
+    background-color: red;
+    color: white;
+}
+
+.ver {
+    background-color: green;
+    color: white;
+}
+
+.confirmar button:hover {
+    opacity: 0.8;
+}
